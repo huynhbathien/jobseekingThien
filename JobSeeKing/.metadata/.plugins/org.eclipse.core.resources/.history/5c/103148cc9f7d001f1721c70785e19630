@@ -1,0 +1,6 @@
+package jobseekingbe.api.model;
+
+public class JobDTO {
+	private Long id;
+	
+}

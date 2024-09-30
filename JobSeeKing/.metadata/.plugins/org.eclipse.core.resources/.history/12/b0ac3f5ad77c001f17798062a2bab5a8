@@ -1,0 +1,9 @@
+package jobseekingbe.api.builder;
+
+public class JobSearchBuider {
+	String name;
+	private String location;
+	private String industry;
+	private Long salảy;
+
+}

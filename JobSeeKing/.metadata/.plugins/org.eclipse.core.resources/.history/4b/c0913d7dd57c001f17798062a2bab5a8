@@ -1,0 +1,5 @@
+package jobseekingbe.api.builder;
+
+public class JobSearchBuider {
+
+}

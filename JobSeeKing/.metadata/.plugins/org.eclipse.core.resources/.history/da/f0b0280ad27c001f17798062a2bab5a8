@@ -1,0 +1,9 @@
+package jobseekingbe.api.service.Job;
+
+import java.util.List;
+
+import jobseekingbe.api.model.JobDTO;
+
+public interface JobService {
+	List<JobDTO> jobList(String name);
+}

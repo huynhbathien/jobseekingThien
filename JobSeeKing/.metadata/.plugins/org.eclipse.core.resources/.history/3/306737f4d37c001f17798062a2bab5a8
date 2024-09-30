@@ -1,0 +1,21 @@
+package jobseekingbe.api.service.Job;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import jobseekingbe.api.model.JobDTO;
+import jobseekingbe.api.repository.JobRepository;
+
+public class JobServiceImpl implements JobService {
+
+	@Autowired
+	private JobRepository jobRepository;
+	@Override
+	public List<JobDTO> findJobs(SMap<String, Object> params) {
+		List<JobDTO> listJObs= jobRepository.findJobs(params);
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package jobseekingbe.api.utils;
+
+public class MapUtil {
+
+}

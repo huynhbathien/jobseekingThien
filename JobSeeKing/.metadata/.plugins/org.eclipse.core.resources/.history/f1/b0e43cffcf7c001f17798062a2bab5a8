@@ -1,0 +1,5 @@
+package jobseekingbe.model;
+
+public class JobDTO {
+
+}

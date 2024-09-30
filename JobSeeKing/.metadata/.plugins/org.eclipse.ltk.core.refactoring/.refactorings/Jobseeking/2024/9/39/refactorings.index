@@ -1,0 +1,12 @@
+1727438580822	Delete element
+1727438609332	Delete element
+1727438666019	Delete element
+1727439832154	Rename resource 'application.properties'
+1727440092071	Rename resource 'application.ya'
+1727441440193	Delete element
+1727441794958	Move 'model' to 'api'
+1727442661804	Rename type 'JobRepository'
+1727442674090	Rename type 'JobRepositoryImpl'
+1727444046098	Rename package 'jobseekingbe.api.JobBuider'
+1727444063886	Rename package 'jobseekingbe.api.buider'
+1727446750755	Rename type 'JobSearchBuider'

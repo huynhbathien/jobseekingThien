@@ -1,0 +1,42 @@
+package jobseekingbe.api.repository.custom;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Repository;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
+import jobseekingbe.api.builder.JobSearchBuilder;
+import jobseekingbe.api.entity.Job;
+import jobseekingbe.api.model.JobDTO;
+
+@Repository
+public class JobRepositoryCustomImpl implements JobRepositoryCustom {
+
+	@PersistenceContext
+	private EntityManager entityManager;
+	
+	public static void joinTable(JobSearchBuilder buider,StringBuilder sql) {
+		String industry=buider.getIndustry();
+		if(industry!=null) {
+			sql.append("INNER JOIN company b ON a.company_id=b.id ");
+		}
+	}
+	public static void queryNomal(JobSearchBuilder buider,StringBuilder sql) {
+		String salary=buider.getSalary()
+	}
+	
+	
+	
+	@Override
+	public List<JobDTO> findJobs(JobSearchBuilder builder) {
+		StringBuilder sql=new StringBuilder("select * from job a");
+		StringBuilder where=new StringBuilder("where 1=1");	
+		
+		Query query=entityManager.createNativeQuery(sql.toString(), getClass());
+		return query.getResultList();
+	}
+
+}

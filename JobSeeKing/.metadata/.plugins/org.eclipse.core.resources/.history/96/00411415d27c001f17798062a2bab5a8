@@ -1,0 +1,14 @@
+package jobseekingbe.api.service.Job;
+
+import java.util.List;
+
+import jobseekingbe.api.model.JobDTO;
+
+public class JobServiceImpl implements JobService {
+
+	@Override
+	public List<JobDTO> jindJobs(String name) {
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+package jobseekingbe.api.repository.custom;
+
+import java.util.List;
+
+import jobseekingbe.api.model.JobDTO;
+
+public class JobRepositoryCustomImpl implements JobRepositoryCustom {
+
+	@Override
+	public List<JobDTO> jobList(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

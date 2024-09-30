@@ -1,0 +1,5 @@
+package jobseekingbe.api.repository.custom;
+
+public interface JobRepository {
+
+}

@@ -1,0 +1,5 @@
+package jobseekingbe.api.service.Job;
+
+public class JobServiceImpl extends JobSer {
+
+}

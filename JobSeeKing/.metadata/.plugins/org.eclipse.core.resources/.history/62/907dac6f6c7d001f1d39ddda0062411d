@@ -1,0 +1,67 @@
+package jobseekingbe.api.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class JobSearchBuilder {
+	private String name;
+	private String location;
+	private String industry;
+	private List<String> salary=new ArrayList<>();
+	
+	private JobSearchBuilder(Buider builder) {
+		this.name = builder.name;
+		this.location = builder.location;
+		this.industry = builder.industry;
+		this.salary = builder.salary;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public String getIndustry() {
+		return industry;
+	}
+
+
+	public List<String> getSalary() {
+		return salary;
+	}
+
+
+	public static class Buider{
+		private String name;
+		private String location;
+		private String industry;
+		private List<String> salary;
+		
+		public Buider setName(String name) {
+			this.name=name;
+			return this;
+		}
+		public Buider setLocation(String location) {
+			this.location = location;
+			return this;
+
+		}
+		public Buider setIndustry(String industry) {
+			this.industry = industry;
+			return this;
+
+		}
+		public Buider setSalary(String salary) {
+			this.salary = salary;
+			return this;
+
+		}
+		public JobSearchBuilder build() {
+			return new JobSearchBuilder(this);
+		}
+		
+	}
+}
